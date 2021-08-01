@@ -15,9 +15,27 @@
         "type": "indirect"
       }
     },
+    "py-mahjong": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1603879352,
+        "narHash": "sha256-jx+nM5YBjJcHZRM1zgLbOSQMnjT+tGtWqokr/OwOzW4=",
+        "owner": "MahjongRepository",
+        "repo": "mahjong",
+        "rev": "83841b9d52b2cc6e14ca0d745246cd5b33450b51",
+        "type": "github"
+      },
+      "original": {
+        "owner": "MahjongRepository",
+        "ref": "v1.1.11",
+        "repo": "mahjong",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "py-mahjong": "py-mahjong"
       }
     }
   },
