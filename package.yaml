@@ -1,0 +1,28 @@
+name:        fufu-api
+version:     0.1.0.0
+synopsis:    API for Riichi Mahjong scoring training
+description: An API that generates Riichi Mahjong hands and the corresponding
+             scores for use by an accompanying webapp for scoring training.
+category:    Web
+github:      chuahou/fufu-api
+maintainer:  Chua Hou <human+github@chuahou.dev>
+
+ghc-options:
+    - -Wall
+    - -fwarn-incomplete-uni-patterns
+    - -fwarn-incomplete-record-updates
+    - -static
+
+default-extensions:
+    - LambdaCase
+    - TupleSections
+
+dependencies:
+    - base >= 4.13 && < 5
+
+library:
+    source-dirs: src
+
+extra-doc-files:
+    - README.md
+    - CHANGELOG.md
