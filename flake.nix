@@ -7,8 +7,8 @@
     pkgs   = nixpkgs.legacyPackages.${system};
 
   in rec {
-    defaultPackage.${system} = pkgs.haskell.lib.dontHaddock
-      (pkgs.haskellPackages.callCabal2nix "fufu-api" ./. {});
+    defaultPackage.${system} =
+      pkgs.haskellPackages.callCabal2nix "fufu-api" ./. {};
 
     devShell.${system} =
       (pkgs.haskell.lib.overrideCabal defaultPackage.${system} (old: {
